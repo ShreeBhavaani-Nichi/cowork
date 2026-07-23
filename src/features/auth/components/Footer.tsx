@@ -1,27 +1,31 @@
 export default function Footer() {
   return (
-    <div className="mt-10 text-center">
-      <div className="flex items-center justify-center gap-3 text-[13px] text-[#6B7280]">
+    <footer className="mt-4 text-center">
+
+      <div className="flex flex-wrap items-center justify-center gap-2.5 text-[10.5px] text-[#434655]">
+
         <button className="hover:text-[#004AC6]">
           Help Center
         </button>
 
-        <span>•</span>
+        <span className="h-1 w-1 rounded-full bg-gray-300" />
 
         <button className="hover:text-[#004AC6]">
           Privacy Policy
         </button>
 
-        <span>•</span>
+        <span className="h-1 w-1 rounded-full bg-gray-300" />
 
         <button className="hover:text-[#004AC6]">
           Terms of Use
         </button>
+
       </div>
 
-      <p className="mt-3 text-[12px] uppercase tracking-wide text-[#9CA3AF]">
+      <p className="mt-2 text-[8.5px] uppercase tracking-widest text-gray-400">
         © 2026 NICHI-IN. ALL RIGHTS RESERVED.
       </p>
-    </div>
+
+    </footer>
   );
 }
