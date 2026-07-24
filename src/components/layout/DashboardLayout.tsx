@@ -10,18 +10,20 @@ export default function DashboardLayout({
   children,
 }: DashboardLayoutProps) {
   return (
-    <div className="flex min-h-screen bg-[#F6F8FC]">
-      {/* Sidebar */}
+    <div className="h-screen bg-[#F6F8FC]">
+      {/* Fixed Sidebar */}
       <Sidebar />
 
       {/* Right Section */}
-      <div className="flex flex-1 flex-col">
-        {/* Header */}
+      <div className="ml-[305px]">
+        {/* Fixed Header */}
         <Header />
 
-        {/* Main Content */}
-        <main className="flex-1 overflow-y-auto px-10 py-8">
-          {children}
+        {/* Scrollable Content */}
+        <main className="pt-[74px] h-screen overflow-y-auto">
+          <div className="min-h-[calc(100vh-74px)] px-10 py-8">
+            {children}
+          </div>
         </main>
       </div>
     </div>
